@@ -21,7 +21,7 @@ Git相关
 **大赞**
 
 [C++ reference 英文](http://en.cppreference.com/w/ )
->c++参考手册，英文版，支持到c++20  
+>c++参考手册，最新版本的，英文版，支持到c++20  
 
 [C++ reference 中文](http://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5 )
 >上面那个c++参考手册的中文版本，感觉翻译的不是很好，支持到c++20
