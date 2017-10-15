@@ -12,7 +12,7 @@ MarkDown相关  
 Git相关
 ---
 [常用 Git 命令使用教程](http://classfoo.com/ccby/article/cBVvbSu)
->Git还不怎么会~~~ 
+>Git的命令查询 
 
 好用的c++查询库
 ---
