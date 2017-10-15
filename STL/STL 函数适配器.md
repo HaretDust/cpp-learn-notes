@@ -38,13 +38,13 @@ STL 函数适配器
      `men_fun` `men_fun_ref` *将在c++17中弃用*   
     >对成员函数指针使用，把n元成员函数适配为n + 1元函数对象，该函数对象的第一个参数为调用该成员函数时的目的对象  
     >也就是需要将“object->method()”转为“method(object)”形式。将“object->method(arg1)”转为二元函数“method(object, arg1)”  
-    
-    c++11标准中建议使用`std::mem_fn`和`std::bind`  
-    **个人觉得使用`std::bind`和`std::function`足以解决了,std::men_fn有点问题**  
-    `std::mem_fn`  
-    >存储并执行成员函数和成员对象
-    >将成员函数（Member function）转化成函数对象（指针（Pointer）版）
-    >c++11中谨慎使用men_fn，可能会出现问题 在c++14中被改正了，因此语法上稍有区别
+
+     c++11标准中建议使用`std::mem_fn`和`std::bind`  
+     **个人觉得使用`std::bind`和`std::function`足以解决了,std::men_fn有点问题**  
+     `std::mem_fn`  
+     >存储并执行成员函数和成员对象  
+     >将成员函数（Member function）转化成函数对象（指针（Pointer）版） 
+     >c++11中谨慎使用men_fn，可能会出现问题 在c++14中被改正了，因此语法上稍有区别  
 
 ***
 用法
@@ -111,7 +111,7 @@ STL 函数适配器
 ***
 范例
 ---
-##### Polymorphic function wrappers 多态函数封装器
+#### Polymorphic function wrappers 多态函数封装器
 
 `std::function`
 ```cpp
@@ -185,7 +185,7 @@ num_: 314159
 314162  
 18  
 
-##### 绑定相关
+#### 绑定相关
 
 `std::bind2nd`
 ```cpp
@@ -290,7 +290,7 @@ int main()
 10  
 10  
 
-##### Negators 谓词结果转换
+#### Negators 谓词结果转换
 `std::not1` `std::not2`
 > `ptr_fun`范例也在其中
 
