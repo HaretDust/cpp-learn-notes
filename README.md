@@ -28,6 +28,9 @@ Git相关
 [cplusplus](http://www.cplusplus.com/)
 >也是c++查询常用的网站，也包含了c的库的内容
 
+[MSDN](https://msdn.microsoft.com/zh-cn/library/cscc687y.aspx)
+>大名鼎鼎的MSDN，这个链接指向的是MSDN中的标准库的内容，需要其他的自己跳转就好了
+
 STL相关
 ---
 [STL容器](https://github.com/HaretDust/cpp-learn-notes/blob/master/STL/STL%20%E5%AE%B9%E5%99%A8.md "STL中的容器"  )  
