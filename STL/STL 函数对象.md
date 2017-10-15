@@ -1,6 +1,7 @@
 
 STL提供的函数对象
 ===
+`#include <functional>`
 ***
 用于算术运算的函数对象：
 ---  
@@ -51,9 +52,10 @@ STL提供的函数对象
 >搜索特定值 依次匹配 特定排序
 `std::mismatch( )`
 
-
-1. ### 范例  
-`std::accumulate( )`  
+算术运算  
+---
+1. ### 范例  
+`std::accumulate( )`  
 >accumulate(首地址，结束地址(一般是*首地址+N*)，初始值，函数对象<类型名字>( ))  
 >>计算方法  
 返回值1 = 初始值  op(函数对象) 首地址   指向的数据  
@@ -78,8 +80,8 @@ int main ( ) {
 >结果
 >> The result of 100-10-20-30 is 40.
 
-2. ### 范例  
-`std::transform( )`  
+2. ### 范例  
+`std::transform( )`  
 >transform(第一运算对象首地址，结束地址(一般是*首地址+N*)，第二个运算对象首地址，结果，函数对象<类型名字>( ))
 >>计算方法  
 结果1 = 第一运算对象首地址   op(函数对象) 第二个运算对象首地址   指向的数据  
@@ -138,8 +140,10 @@ int main ( ) {
 4 is even  
 5 is odd  
 
-4. ### 范例  
-`std::mismatch `范例1  
+关系运算
+---
+4. ### 范例  
+`std::mismatch `范例1  
 >std::mismatch( )  作用: 检索是否匹配，返回一个`pair`  
 >std::mismatch(第一比较对象首地址，结束地址(一般是*首地址+N*)，第二比较对象首地址，函数对象<类型名字>( ) )  
 >>计算方法  
@@ -235,3 +239,86 @@ int main()
 前一个元素是: 6
 找到: 7
 前一个元素是: 6
+
+5. ### 范例  
+`std::sort `  
+>std::sort( )  作用: 排序  
+>std::sort(对象首地址，结束地址(一般是*首地址+N*)，函数对象<类型名字>( ) )  
+>>计算方法  
+传入不同的函数对象控制升序或者降序排列  
+
+```cpp
+// greater example
+#include <iostream>     // std::cout
+#include <functional>   // std::greater
+#include <algorithm>    // std::sort
+
+int main () {
+  int numbers[]={20,40,50,10,30};
+  std::sort (numbers, numbers+5, std::greater<int>());
+  for (int i=0; i<5; i++)
+    std::cout << numbers[i] << ' ';
+  std::cout << '\n';
+  return 0;
+}
+```
+>结果
+>>50 40 30 20 10  
+
+
+6. ### 范例  
+`std::sort ` 和 `std::include `
+>std::includes( ) 作用: 判断是否是子集 *(两个输入序列须保证已排好序)*  
+>std::includes(对象首地址，结束地址(一般是*首地址+N*)，第二对象首地址，第二对象结尾，函数对象<类型名字>( ) )
+>>计算方法  
+如果第二对象中的所有元素都包含在第一对象中，则返回 true  
+否则返回 false  
+注意的是 对象1 和 对象2 以及includes中的排序方向(升序或者降序)必须相同，  
+并且includes中只能为严格弱排序，`less` 或者 `greater`这样的 
+```cpp
+// less example
+#include <iostream>     // std::cout
+#include <functional>   // std::less
+#include <algorithm>    // std::sort, std::includes
+
+int main () {
+  int foo[]={10,20,5,15,25};
+  int bar[]={15,10,20};
+  std::sort (foo, foo+5, std::less<int>());  // 5 10 15 20 25
+  std::sort (bar, bar+3, std::less<int>());  //   10 15 20
+  if (std::includes (foo, foo+5, bar, bar+3, std::less<int>()))
+    std::cout << "foo includes bar.\n";
+  return 0;
+}
+```
+>结果
+>>foo includes bar.
+
+逻辑运算  
+---
+7. ### 范例 
+
+```cpp
+// logical_and example
+#include <iostream>     // std::cout, std::boolalpha
+#include <functional>   // std::logical_and
+#include <algorithm>    // std::transform
+
+int main () {
+  bool foo[] = {true,false,true,false};
+  bool bar[] = {true,true,false,false};
+  bool result[4];
+  std::transform (foo, foo+4, bar, result, std::logical_and<bool>());
+  std::cout << std::boolalpha << "Logical AND:\n";
+  for (int i=0; i<4; i++)
+    std::cout << foo[i] << " AND " << bar[i] << " = " << result[i] << "\n";
+  return 0;
+}
+```
+>结果
+>>
+Logical AND:  
+true AND true = true  
+false AND true = false  
+true AND false = false  
+false AND false = false  
