@@ -1,12 +1,18 @@
 learn-notes 学习笔记
 ===
 学习随笔  
->整理和记录自己碰到的好的笔记  
+>整理和记录自己碰到的好的笔记  
+>纯自用，如果你看到了的话欢迎提意见和建议，不过我不一定能回，因为Git还不怎么会用~  
 
 MarkDown相关  
 ---
 [MrakDown入门语法](https://github.com/HaretDust/learn-notes/blob/master/MarkDown/MarkDown%20%E5%AD%A6%E4%B9%A0.md "MarkDown的基本语法")  
 >只是自己胡乱写的一些对MarkDown语法规则的测试，忘了的时候就看看
+
+Git相关
+---
+[常用 Git 命令使用教程](http://classfoo.com/ccby/article/cBVvbSu)
+>Git还不怎么会~~~ 
 
 好用的c++查询库
 ---
@@ -22,14 +28,6 @@ MarkDown相关  
 [cplusplus](http://www.cplusplus.com/)
 >也是c++查询常用的网站，也包含了c的库的内容
 
-书籍相关
----
-[计算机编程类中文书籍](https://github.com/justjavac/free-programming-books-zh_CN)
->由GitHub的小伙伴们维护的库
-
-[计算机编程书籍索引目录](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-zh.md#c-1)
->和上面的类似的一个索引
-
 STL相关
 ---
 [STL容器](https://github.com/HaretDust/cpp-learn-notes/blob/master/STL/STL%20%E5%AE%B9%E5%99%A8.md "STL中的容器"  )  
@@ -43,3 +41,13 @@ STL相关
 
 [STL函数对象](https://github.com/HaretDust/learn-notes/blob/master/STL/STL%20%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1.md "STL中的函数对象" )
 >STL中的函数对象介绍及基本用法，案例  
+
+
+书籍相关
+---
+[计算机编程类中文书籍](https://github.com/justjavac/free-programming-books-zh_CN)
+>由GitHub的小伙伴们维护的库
+
+[计算机编程书籍索引目录](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-zh.md#c-1)
+>和上面的类似的一个索引
+
