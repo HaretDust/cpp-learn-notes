@@ -64,3 +64,6 @@ STL相关
 
 [dmoztools信息归纳网站](http://dmoztools.net/ )
 >一个提供了全球的学科，并对各国前沿进展的网站进行了收集的网站
+
+[curlie 信息归纳网站](http://curlie.org/top/index.html)
+>dmoz网站似乎不在维护了(虽然还能访问)，转而是由这个进行继承的
