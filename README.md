@@ -30,6 +30,10 @@ Git相关
 [MSDN](https://msdn.microsoft.com/zh-cn/library/cscc687y.aspx)
 >大名鼎鼎的MSDN，这个链接指向的是MSDN中的标准库的内容，需要其他的自己跳转就好了
 
+[C++ Core Guidelines](https://github.com/isocpp/CppCoreGuidelines)
+>The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best practices about coding in C++
+>大概意思就是怎么才能写出更好的c++ [在线阅读模式](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+
 STL相关
 ---
 [STL 容器](https://github.com/HaretDust/cpp-learn-notes/blob/master/STL/STL%20%E5%AE%B9%E5%99%A8.md "STL中的容器"  )  
@@ -47,6 +51,11 @@ STL相关
 [STL 函数适配器](https://github.com/HaretDust/learn-notes/blob/master/STL/STL%20%E5%87%BD%E6%95%B0%E9%80%82%E9%85%8D%E5%99%A8.md "STL中的函数迭代器")
 >STL中的函数迭代器介绍及基本用法，案例  
 
+boost
+---
+[Die Boost C++ Bibliotheken](https://dieboostcppbibliotheken.de/)
+>boost的。。。指南吧[中文版本](http://zh.highscore.de/cpp/boost/)
+
 书籍相关
 ---
 [计算机编程类中文书籍](https://github.com/justjavac/free-programming-books-zh_CN)
@@ -54,6 +63,7 @@ STL相关
 
 [计算机编程书籍索引目录](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books-zh.md#c-1)
 >和上面的类似的一个索引
+
 
 
 杂项
